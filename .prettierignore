@@ -1,0 +1,11 @@
+dist
+node_modules
+.next
+build
+.contentlayer
+*.d.ts
+yarn.lock
+public 
+coverage
+.gitkeep
+*.hbs
