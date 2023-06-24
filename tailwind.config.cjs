@@ -12,6 +12,10 @@ module.exports = {
       fontFamily: {
         sans: ["var(--font-plus-jakarta-sans)", ...fontFamily.sans],
       },
+      colors: {
+        blue: { 200: "#f0f8ff", 400: "#2c83fb", 500: "#1f76f0" },
+        gray: { 500: "#6c8291", 800: "#1c3c50" },
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],
