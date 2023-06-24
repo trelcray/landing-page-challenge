@@ -1,5 +1,6 @@
 import { Plus_Jakarta_Sans as PlusJakartaSans } from "next/font/google";
 
+import { Header } from "@/components/header";
 import "@/styles/globals.css";
 
 const plusJakartaSans = PlusJakartaSans({
@@ -21,7 +22,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head />
-      <body className={plusJakartaSans.className}>{children}</body>
+      <body className={plusJakartaSans.className}>
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }
