@@ -1,7 +1,9 @@
+import { Banner } from "@/components/banner";
+
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <p className="font-bold">Hello World</p>
+    <main className="flex flex-1 flex-col gap-6">
+      <Banner />
     </main>
   );
 }
