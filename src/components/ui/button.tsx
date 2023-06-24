@@ -14,25 +14,24 @@ const buttonVariants = cva(
     variants: {
       colors: {
         primary:
-          "bg-gray-900 dark:bg-gray-400 hover:bg-gray-800 dark:hover:bg-gray-500",
+          "bg-gray-500 border-gray-500 hover:bg-gray-400 hover:border-gray-400",
         secondary:
-          "bg-blue-900 dark:bg-blue-400 hover:bg-blue-800 dark:hover:bg-blue-500",
-        warning:
-          "bg-yellow-900 dark:bg-yellow-400 hover:bg-yellow-800 dark:hover:bg-yellow-500",
-        danger:
-          "bg-red-900 dark:bg-red-400 hover:bg-red-800 dark:hover:bg-red-500",
-        success:
-          "bg-green-900 dark:bg-green-400 hover:bg-green-800 dark:hover:bg-green-500",
+          "bg-blue-400 hover:bg-blue-500 border-blue-400 hover:border-blue-500",
+        tertiary:
+          "bg-gray-200 border-gray-200 hover:bg-gray-300 hover:border-gray-300",
+        warning: "bg-yellow-900 hover:bg-yellow-800",
+        danger: "bg-red-900 hover:bg-red-800",
+        success: "bg-green-900 hover:bg-green-800 ",
       },
       variant: {
-        solid: "border text-white border-gray-900 dark:border-slate-400",
-        outline: "bg-transparent dark:bg-transparent border border-gray-900",
-        transparent: "bg-transparent dark:bg-transparent",
+        solid: "border text-white",
+        outline: "bg-transparent border hover:bg-transparent",
+        transparent: "bg-transparent",
       },
       size: {
-        xs: "p-0",
+        xs: "p-1",
         sm: "py-1 px-2",
-        md: "py-1 px-4",
+        md: "py-2 px-4",
         lg: "py-2 px-7",
         xl: "py-3 px-9",
       },
