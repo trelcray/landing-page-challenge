@@ -2,6 +2,7 @@ import { Plus_Jakarta_Sans as PlusJakartaSans } from "next/font/google";
 
 import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
+import { TailwindIndicator } from "@/components/tailwind-indicator";
 import "@/styles/globals.css";
 import { cn } from "@/utils/cn";
 
@@ -33,6 +34,7 @@ export default function RootLayout({
       >
         <Header />
         {children}
+        <TailwindIndicator />
         <Footer />
       </body>
     </html>
