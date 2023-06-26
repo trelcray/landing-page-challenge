@@ -1,5 +1,9 @@
 import { FC } from "react";
 
+import Image from "next/image";
+
+import Header from "@/assets/header.svg";
+
 import { Button } from "./ui/button";
 
 export const Banner: FC = ({}) => {
@@ -24,12 +28,15 @@ export const Banner: FC = ({}) => {
       <h2 className="text-xl font-semibold text-gray-800 sm:text-3xl">
         Menos Conversinha,
       </h2>
-      <h1
-        className="bg-gradient-to-r from-blue-400 via-45% to-blue-500
+      <div className="relative">
+        <Image src={Header} alt="icon" className="absolute -right-4 -top-1" />
+        <h1
+          className="bg-gradient-to-r from-blue-400 via-45% to-blue-500
         bg-clip-text text-4xl font-bold text-transparent sm:text-6xl"
-      >
-        Mais Conversão
-      </h1>
+        >
+          Mais Conversão
+        </h1>
+      </div>
       <span className="my-1 w-full border sm:w-[32rem] " />
       <p className="text-center text-xs font-normal text-gray-800">
         Conheça as estratégias que <strong>mudaram o jogo</strong> e como
