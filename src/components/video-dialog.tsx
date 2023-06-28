@@ -16,17 +16,19 @@ import {
 } from "./ui/dialog";
 import { YoutubePlayer } from "./ui/youtube-player";
 
-interface IVideoDialog {
+interface IVideoDialogProps {
   visibleResults: {
     id: number;
     link: string;
     urlImage: string;
     title: string;
     description: string;
+    category: string;
+    publicationDate: string;
   }[];
 }
 
-export const VideoDialog: FC<IVideoDialog> = ({ visibleResults }) => {
+export const VideoDialog: FC<IVideoDialogProps> = ({ visibleResults }) => {
   return (
     <>
       {visibleResults.map((item) => (
