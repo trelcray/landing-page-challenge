@@ -3,6 +3,7 @@
 import { FC, useState } from "react";
 
 import { UseCreatePagination } from "@/hooks/use-create-pagination";
+import { UseFilterData } from "@/hooks/use-filter-data";
 import { UseWidth } from "@/hooks/use-width";
 import { videos } from "@/mocks/videos.json";
 import { cn } from "@/utils/cn";
@@ -19,13 +20,16 @@ import { VideoDialog } from "./video-dialog";
 
 export const Marketing: FC = ({}) => {
   const [isActive, setIsActive] = useState("Agências");
+  const [selectValue, setSelectValue] = useState("date");
 
   const { isMobile, isPortrait } = UseWidth(639, 1023);
+
+  const { filteredData } = UseFilterData(videos, isActive, selectValue);
 
   const numberPages = isMobile ? 3 : isPortrait ? 6 : 9;
 
   const { handleChangePage, visibleResults, pageLinks, currentPage } =
-    UseCreatePagination(videos, numberPages);
+    UseCreatePagination(filteredData, numberPages);
 
   return (
     <section
@@ -64,7 +68,11 @@ export const Marketing: FC = ({}) => {
         </div>
         <div className="flex min-w-[17rem] items-center justify-end gap-2">
           <strong className="text-xs">Ordernar Por</strong>
-          <Select defaultValue="date">
+          <Select
+            defaultValue="date"
+            value={selectValue}
+            onValueChange={(value) => setSelectValue(value)}
+          >
             <SelectTrigger
               className="w-[180px] rounded-lg border-gray-800 
               px-2 text-xs"
@@ -84,8 +92,8 @@ export const Marketing: FC = ({}) => {
       </div>
 
       <div
-        className="grid min-h-[56rem] grid-cols-1 place-content-start gap-4 border-y-2 py-10
-        sm:grid-cols-2 lg:grid-cols-3"
+        className="grid min-h-[56rem] grid-cols-1 place-content-start gap-4 
+        border-y-2 py-10 sm:grid-cols-2 lg:grid-cols-3"
       >
         <VideoDialog visibleResults={visibleResults} />
       </div>
