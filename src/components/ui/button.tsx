@@ -17,11 +17,13 @@ const buttonVariants = cva(
           "bg-gray-500 border-gray-500 hover:bg-gray-400 hover:border-gray-400",
         secondary:
           "bg-blue-400 hover:bg-blue-500 border-blue-400 hover:border-blue-500",
-        tertiary:
-          "bg-gray-200 border-gray-200 hover:bg-gray-300 hover:border-gray-300",
-        warning: "bg-yellow-900 hover:bg-yellow-800",
-        danger: "bg-red-900 hover:bg-red-800",
-        success: "bg-green-900 hover:bg-green-800 ",
+        muted:
+          "bg-slate-200 border-slate-200 hover:bg-slate-300 hover:border-slate-300",
+        warning:
+          "bg-amber-200 border-amber-200 hover:bg-amber-300 hover:border-amber-300",
+        info: "bg-sky-200 border-sky-200 hover:bg-sky-300 hover:border-sky-300",
+        success:
+          "bg-emerald-200 border-emerald-200 hover:bg-emerald-300 hover:border-emerald-300",
       },
       variant: {
         solid: "border text-white",
