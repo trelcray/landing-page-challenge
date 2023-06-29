@@ -59,7 +59,7 @@ export const Footer: FC = ({}) => {
           className="flex flex-col gap-4 text-xs font-light text-gray-800 
           sm:text-sm"
         >
-          <h5 className="mb-2 text-base font-semibold">{Contact.title}</h5>
+          <h1 className="mb-2 text-base font-semibold">{Contact.title}</h1>
           <span className="flex items-center justify-around">
             {Contact.socials.map((data, i) => (
               <a
@@ -104,7 +104,7 @@ export const Footer: FC = ({}) => {
       <div className="flex w-full justify-around gap-2 text-xs">
         <p>
           Copyright © 2015 - 2022 Todos os direitos reservados | {""}
-          <span className="text-blue-400">Leadster</span>
+          <span className="text-blue-500">Leadster</span>
         </p>
         <address>
           Rua José Loureiro, 464 - centro - Curitiba PR - CEP 80010-000 | Termos

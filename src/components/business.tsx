@@ -18,16 +18,16 @@ export const Business: FC = ({}) => {
     >
       <div className="flex">
         <Image
-          width={563}
-          height={400}
+          width={640}
+          height={595}
           className="z-10 h-[26rem] w-[26rem] md:h-[25rem] md:w-[35.1875rem]"
           src={Comparative}
           alt="leadster graphic"
           priority
         />
         <Image
-          width={320}
-          height={320}
+          width={563}
+          height={424}
           className="absolute inset-0 -left-8 mx-auto h-full w-full pt-10
           lg:inset-x-auto lg:bottom-0 lg:left-0 lg:w-5/12"
           src={BG}
