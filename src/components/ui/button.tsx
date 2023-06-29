@@ -108,15 +108,15 @@ const Button = forwardRef<HTMLButtonElement, IButtonProps>(
         {...props}
       >
         {isLoading && loaderPosition === "start" && (
-          <Loader2 className="h-4 w-4 animate-spin" />
+          <Loader2 aria-label="loader start" className="h-4 w-4 animate-spin" />
         )}
         {isLoading && !loaderPosition ? (
-          <Loader2 className="h-4 w-4 animate-spin" />
+          <Loader2 aria-label="loader full" className="h-4 w-4 animate-spin" />
         ) : (
           children
         )}
         {isLoading && loaderPosition === "end" && (
-          <Loader2 className="h-4 w-4 animate-spin" />
+          <Loader2 aria-label="loader end" className="h-4 w-4 animate-spin" />
         )}
       </button>
     );

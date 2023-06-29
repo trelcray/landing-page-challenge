@@ -30,6 +30,8 @@ export const Banner: FC = ({}) => {
       </h2>
       <div className="relative">
         <Image
+          width={44}
+          height={44}
           src={Header}
           alt="icon"
           className="absolute -right-5 -top-2 h-9 w-9 sm:h-11 sm:w-11"

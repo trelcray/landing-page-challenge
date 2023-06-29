@@ -18,12 +18,16 @@ export const Business: FC = ({}) => {
     >
       <div className="flex">
         <Image
+          width={320}
+          height={320}
           className="z-10 h-80 w-80 md:h-[26rem] md:w-[26rem]"
           src={Comparative}
           alt="leadster graphic"
           priority
         />
         <Image
+          width={320}
+          height={320}
           className="absolute inset-x-0 -left-8 top-8 mx-auto h-80 md:h-[26rem] 
           md:w-[26rem] lg:inset-x-auto lg:bottom-0 lg:left-0 lg:top-auto
           lg:h-[25rem] lg:w-5/12"
@@ -49,15 +53,15 @@ export const Business: FC = ({}) => {
           <Button colors="secondary" radius="full" className="p-4">
             <span>VER DEMONSTRAÇÃO</span>
           </Button>
-          <Image src={RD} alt="Stamp RD" />
+          <Image width={200} height={200} src={RD} alt="Stamp RD" />
         </div>
-        <div className="flex flex-wrap gap-2 text-xs">
-          <Image src={Card} alt="card icon" />
+        <div className="flex flex-wrap items-end gap-2 text-xs">
+          <Image width={18} height={18} src={Card} alt="card icon" />
           <p>
             <strong>Não</strong>
             {""} é necessário Cartão de Crédito |{" "}
           </p>
-          <Image src={Rating} alt="star rating" /> {""}
+          <Image width={100} height={100} src={Rating} alt="star rating" /> {""}
           <span>4.9/5 de média de satisfação</span>
         </div>
       </div>

@@ -7,6 +7,7 @@ export const Video: FC = ({}) => {
       className="flex flex-1 animate-pulse items-center justify-center bg-gray-300 dark:bg-gray-700"
     >
       <svg
+        aria-label="loading"
         className="h-12 w-12 text-gray-200 dark:text-gray-600"
         xmlns="http://www.w3.org/2000/svg"
         aria-hidden="true"

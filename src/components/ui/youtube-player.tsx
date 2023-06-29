@@ -8,6 +8,10 @@ interface IYoutubePlayerProps {
   videoId: string;
 }
 
-export const YoutubePlayer: FC<IYoutubePlayerProps> = async ({ videoId }) => {
-  return <ReactPlayer url={videoId} controls width="100%" height="100%" />;
+export const YoutubePlayer: FC<IYoutubePlayerProps> = ({ videoId }) => {
+  return (
+    <div className="flex flex-1" aria-label="youtube">
+      <ReactPlayer url={videoId} controls width="100%" height="100%" />
+    </div>
+  );
 };

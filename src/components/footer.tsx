@@ -14,7 +14,7 @@ export const Footer: FC = ({}) => {
       gap-8 px-2 pb-4 pt-8 text-center text-gray-500 sm:text-start"
     >
       <div className="flex flex-col items-center justify-center">
-        <Image height={46} src={Logo} alt="logo" priority />
+        <Image height={210} width={210} src={Logo} alt="logo" priority />
         <p className="text-xs">Transformando visitantes em clientes.</p>
       </div>
 
@@ -76,13 +76,13 @@ export const Footer: FC = ({}) => {
         >
           <h5 className="mb-2 text-base font-semibold">Siga a Leadster</h5>
           <span className="flex items-center justify-around">
-            <Button radius="full" colors="tertiary" className="p-2">
+            <Button radius="full" colors="muted" className="p-2">
               <LinkedinIcon className="h-4 w-4 fill-gray-500 text-gray-500" />
             </Button>
-            <Button radius="full" colors="tertiary" className="p-2">
+            <Button radius="full" colors="muted" className="p-2">
               <FacebookIcon className="h-4 w-4 fill-gray-500 text-gray-500" />
             </Button>
-            <Button radius="full" colors="tertiary" className="p-2">
+            <Button radius="full" colors="muted" className="p-2">
               <Instagram className="h-4 w-4 font-bold text-gray-500" />
             </Button>
           </span>
