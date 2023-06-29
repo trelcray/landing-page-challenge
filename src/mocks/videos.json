@@ -1,112 +1,110 @@
-{
-  "videos": [
-    {
-      "id": 1,
-      "videoUrl": "https://www.youtube.com/watch?v=b0KlEQ7YLQ4&t=8s",
-      "imageUrl": "/thumbnail.png",
-      "title": "Product-Market Fit: O que é e por que sua Startup precisa dele para sobreviver?",
-      "description": "Entenda qual é a importância de ter um produto que atenda uma necessidade real de mercado e tenha viabilidade técnica e econômica - o famoso 'product-market fit'.",
-      "category": "Agências",
-      "publishedAt": "2021-10-04"
-    },
-    {
-      "id": 2,
-      "videoUrl": "https://www.youtube.com/watch?v=b0KlEQ7YLQ4&t=8s",
-      "imageUrl": "/thumbnail.png",
-      "title": "Product-Market Fit 2: O que é e por que sua Startup precisa dele para sobreviver?",
-      "description": "Entenda qual é a importância de ter um produto que atenda uma necessidade real de mercado e tenha viabilidade técnica e econômica - o famoso 'product-market fit'.",
-      "category": "Agências",
-      "publishedAt": "2022-06-20"
-    },
-    {
-      "id": 3,
-      "videoUrl": "https://www.youtube.com/watch?v=b0KlEQ7YLQ4&t=8s",
-      "imageUrl": "/agencias.png",
-      "title": "Product-Market Fit 3: O que é e por que sua Startup precisa dele para sobreviver?",
-      "description": "Entenda qual é a importância de ter um produto que atenda uma necessidade real de mercado e tenha viabilidade técnica e econômica - o famoso 'product-market fit'.",
-      "category": "Agências",
-      "publishedAt": "2023-04-15"
-    },
-    {
-      "id": 4,
-      "videoUrl": "https://www.youtube.com/watch?v=b0KlEQ7YLQ4&t=8s",
-      "imageUrl": "/agencias.png",
-      "title": "Product-Market Fit 4: O que é e por que sua Startup precisa dele para sobreviver?",
-      "description": "Entenda qual é a importância de ter um produto que atenda uma necessidade real de mercado e tenha viabilidade técnica e econômica - o famoso 'product-market fit'.",
-      "category": "Agências",
-      "publishedAt": "2022-11-02"
-    },
-    {
-      "id": 5,
-      "videoUrl": "https://www.youtube.com/watch?v=b0KlEQ7YLQ4&t=8s",
-      "imageUrl": "/agencias.png",
-      "title": "Product-Market Fit 5: O que é e por que sua Startup precisa dele para sobreviver?",
-      "description": "Entenda qual é a importância de ter um produto que atenda uma necessidade real de mercado e tenha viabilidade técnica e econômica - o famoso 'product-market fit'.",
-      "category": "Agências",
-      "publishedAt": "2021-07-29"
-    },
-    {
-      "id": 6,
-      "videoUrl": "https://www.youtube.com/watch?v=b0KlEQ7YLQ4&t=8s",
-      "imageUrl": "/agencias.png",
-      "title": "Product-Market Fit 6: O que é e por que sua Startup precisa dele para sobreviver?",
-      "description": "Entenda qual é a importância de ter um produto que atenda uma necessidade real de mercado e tenha viabilidade técnica e econômica - o famoso 'product-market fit'.",
-      "category": "Agências",
-      "publishedAt": "2022-09-16"
-    },
-    {
-      "id": 7,
-      "videoUrl": "https://www.youtube.com/watch?v=a89Htfx0YKo",
-      "imageUrl": "/leads.png",
-      "title": "Como usar o ChatGPT para gerar mais Leads Qualificados",
-      "description": "Conheça a nova funcionalidade da Leadster + ChatGPT e descubra como essa tecnologia irá transformar o Marketing.",
-      "category": "Geração de Leads",
-      "publishedAt": "2022-06-01"
-    },
-    {
-      "id": 8,
-      "videoUrl": "https://www.youtube.com/watch?v=8EKTUhF7yA8",
-      "imageUrl": "/thumbnail.png",
-      "title": "Tendências de Marketing para 2024!",
-      "description": "Veja como a Leadster define suas metas e conheça novas estratégias para testar em 2024.",
-      "category": "Marketing Digital",
-      "publishedAt": "2022-11-12"
-    },
-    {
-      "id": 9,
-      "videoUrl": "https://www.youtube.com/watch?v=n6x4blVLYP4",
-      "imageUrl": "/agencias.png",
-      "title": "Startups: O que fazer após captar os primeiros clientes?",
-      "description": "Veja os próximos passos para sua startup após a conquista dos primeiros clientes.",
-      "category": "Agências",
-      "publishedAt": "2023-05-08"
-    },
-    {
-      "id": 10,
-      "videoUrl": "https://www.youtube.com/watch?v=o6qeMW-UUb0",
-      "imageUrl": "/chatbot.png",
-      "title": "Inteligência artificial e empregabilidade",
-      "description": "Reflita sobre como a evolução da inteligência artificial deve afetar a empregabilidade nas áreas do Marketing Digital.",
-      "category": "Chatbot",
-      "publishedAt": "2021-07-05"
-    },
-    {
-      "id": 11,
-      "videoUrl": "https://www.youtube.com/watch?v=VZoPJxdu20c",
-      "imageUrl": "/marketing.png",
-      "title": "O Marketing Conversacional funciona em todos os segmentos de negócio?",
-      "description": "Descubra a resposta para a pergunta: 'O Marketing Conversacional funciona em todos os segmentos de negócio?'",
-      "category": "Marketing Digital",
-      "publishedAt": "2022-09-27"
-    },
-    {
-      "id": 12,
-      "videoUrl": "https://www.youtube.com/watch?v=cn4xC_i_wYc",
-      "imageUrl": "/midia-paga.png",
-      "title": "Os MAIORES MITOS sobre a Mídia Paga!",
-      "description": "Confira os maiores mitos sobre Mídia Paga e Anúncios Online.",
-      "category": "Mídia Paga",
-      "publishedAt": "2023-02-15"
-    }
-  ]
-}
+[
+  {
+    "id": 1,
+    "videoUrl": "https://www.youtube.com/watch?v=b0KlEQ7YLQ4&t=8s",
+    "imageUrl": "/thumbnail.png",
+    "title": "Product-Market Fit: O que é e por que sua Startup precisa dele para sobreviver?",
+    "description": "Entenda qual é a importância de ter um produto que atenda uma necessidade real de mercado e tenha viabilidade técnica e econômica - o famoso 'product-market fit'.",
+    "category": "Agências",
+    "publishedAt": "2021-10-04"
+  },
+  {
+    "id": 2,
+    "videoUrl": "https://www.youtube.com/watch?v=b0KlEQ7YLQ4&t=8s",
+    "imageUrl": "/thumbnail.png",
+    "title": "Product-Market Fit 2: O que é e por que sua Startup precisa dele para sobreviver?",
+    "description": "Entenda qual é a importância de ter um produto que atenda uma necessidade real de mercado e tenha viabilidade técnica e econômica - o famoso 'product-market fit'.",
+    "category": "Agências",
+    "publishedAt": "2022-06-20"
+  },
+  {
+    "id": 3,
+    "videoUrl": "https://www.youtube.com/watch?v=b0KlEQ7YLQ4&t=8s",
+    "imageUrl": "/agencias.png",
+    "title": "Product-Market Fit 3: O que é e por que sua Startup precisa dele para sobreviver?",
+    "description": "Entenda qual é a importância de ter um produto que atenda uma necessidade real de mercado e tenha viabilidade técnica e econômica - o famoso 'product-market fit'.",
+    "category": "Agências",
+    "publishedAt": "2023-04-15"
+  },
+  {
+    "id": 4,
+    "videoUrl": "https://www.youtube.com/watch?v=b0KlEQ7YLQ4&t=8s",
+    "imageUrl": "/agencias.png",
+    "title": "Product-Market Fit 4: O que é e por que sua Startup precisa dele para sobreviver?",
+    "description": "Entenda qual é a importância de ter um produto que atenda uma necessidade real de mercado e tenha viabilidade técnica e econômica - o famoso 'product-market fit'.",
+    "category": "Agências",
+    "publishedAt": "2022-11-02"
+  },
+  {
+    "id": 5,
+    "videoUrl": "https://www.youtube.com/watch?v=b0KlEQ7YLQ4&t=8s",
+    "imageUrl": "/agencias.png",
+    "title": "Product-Market Fit 5: O que é e por que sua Startup precisa dele para sobreviver?",
+    "description": "Entenda qual é a importância de ter um produto que atenda uma necessidade real de mercado e tenha viabilidade técnica e econômica - o famoso 'product-market fit'.",
+    "category": "Agências",
+    "publishedAt": "2021-07-29"
+  },
+  {
+    "id": 6,
+    "videoUrl": "https://www.youtube.com/watch?v=b0KlEQ7YLQ4&t=8s",
+    "imageUrl": "/agencias.png",
+    "title": "Product-Market Fit 6: O que é e por que sua Startup precisa dele para sobreviver?",
+    "description": "Entenda qual é a importância de ter um produto que atenda uma necessidade real de mercado e tenha viabilidade técnica e econômica - o famoso 'product-market fit'.",
+    "category": "Agências",
+    "publishedAt": "2022-09-16"
+  },
+  {
+    "id": 7,
+    "videoUrl": "https://www.youtube.com/watch?v=a89Htfx0YKo",
+    "imageUrl": "/leads.png",
+    "title": "Como usar o ChatGPT para gerar mais Leads Qualificados",
+    "description": "Conheça a nova funcionalidade da Leadster + ChatGPT e descubra como essa tecnologia irá transformar o Marketing.",
+    "category": "Geração de Leads",
+    "publishedAt": "2022-06-01"
+  },
+  {
+    "id": 8,
+    "videoUrl": "https://www.youtube.com/watch?v=8EKTUhF7yA8",
+    "imageUrl": "/thumbnail.png",
+    "title": "Tendências de Marketing para 2024!",
+    "description": "Veja como a Leadster define suas metas e conheça novas estratégias para testar em 2024.",
+    "category": "Marketing Digital",
+    "publishedAt": "2022-11-12"
+  },
+  {
+    "id": 9,
+    "videoUrl": "https://www.youtube.com/watch?v=n6x4blVLYP4",
+    "imageUrl": "/agencias.png",
+    "title": "Startups: O que fazer após captar os primeiros clientes?",
+    "description": "Veja os próximos passos para sua startup após a conquista dos primeiros clientes.",
+    "category": "Agências",
+    "publishedAt": "2023-05-08"
+  },
+  {
+    "id": 10,
+    "videoUrl": "https://www.youtube.com/watch?v=o6qeMW-UUb0",
+    "imageUrl": "/chatbot.png",
+    "title": "Inteligência artificial e empregabilidade",
+    "description": "Reflita sobre como a evolução da inteligência artificial deve afetar a empregabilidade nas áreas do Marketing Digital.",
+    "category": "Chatbot",
+    "publishedAt": "2021-07-05"
+  },
+  {
+    "id": 11,
+    "videoUrl": "https://www.youtube.com/watch?v=VZoPJxdu20c",
+    "imageUrl": "/marketing.png",
+    "title": "O Marketing Conversacional funciona em todos os segmentos de negócio?",
+    "description": "Descubra a resposta para a pergunta: 'O Marketing Conversacional funciona em todos os segmentos de negócio?'",
+    "category": "Marketing Digital",
+    "publishedAt": "2022-09-27"
+  },
+  {
+    "id": 12,
+    "videoUrl": "https://www.youtube.com/watch?v=cn4xC_i_wYc",
+    "imageUrl": "/midia-paga.png",
+    "title": "Os MAIORES MITOS sobre a Mídia Paga!",
+    "description": "Confira os maiores mitos sobre Mídia Paga e Anúncios Online.",
+    "category": "Mídia Paga",
+    "publishedAt": "2023-02-15"
+  }
+]
