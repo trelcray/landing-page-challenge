@@ -71,5 +71,11 @@ export const UseCreatePagination = <T>(data: T[], rowsPerPage: number) => {
     setCurrentPage(updatedCurrentPage);
   }, [data, rowsPerPage, currentPage]);
 
-  return { handleChangePage, pageLinks, currentPage, visibleResults };
+  return {
+    handleChangePage,
+    pageLinks,
+    currentPage,
+    visibleResults,
+    totalPages,
+  };
 };

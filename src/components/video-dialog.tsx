@@ -19,12 +19,12 @@ import { YoutubePlayer } from "./ui/youtube-player";
 interface IVideoDialogProps {
   visibleResults: {
     id: number;
-    link: string;
-    urlImage: string;
+    videoUrl: string;
+    imageUrl: string;
     title: string;
     description: string;
     category: string;
-    publicationDate: string;
+    publishedAt: string;
   }[];
 }
 
@@ -34,12 +34,12 @@ export const VideoDialog: FC<IVideoDialogProps> = ({ visibleResults }) => {
       {visibleResults.map((item) => (
         <Dialog key={item.id}>
           <DialogTrigger>
-            <CardVideo title={item.title} urlImage={item.urlImage} />
+            <CardVideo title={item.title} urlImage={item.imageUrl} />
           </DialogTrigger>
           <DialogContent>
             <DialogHeader className="items-center justify-center text-start">
-              <DialogTitle className="my-6 flex w-72">
-                <p className="line-clamp-3">
+              <DialogTitle className="my-6 flex w-80">
+                <p className="line-clamp-3 p-1">
                   <span className="font-bold text-blue-400">Webinar: </span>
                   {item.title}
                 </p>
@@ -49,7 +49,7 @@ export const VideoDialog: FC<IVideoDialogProps> = ({ visibleResults }) => {
                   lg:h-[15.78rem]"
               >
                 <Suspense fallback={<Video />}>
-                  <YoutubePlayer videoId={item.link} />
+                  <YoutubePlayer videoId={item.videoUrl} />
                 </Suspense>
               </div>
               <DialogDescription
@@ -89,7 +89,8 @@ export const VideoDialog: FC<IVideoDialogProps> = ({ visibleResults }) => {
                 </Button>
                 <Button
                   colors="info"
-                  className="h-7 w-36 border-0 p-0 pr-2 text-sky-600/90"
+                  className="h-7 w-36 justify-start border-0 p-0 pr-2 
+                  text-sky-600/90"
                 >
                   <span
                     className="flex h-full w-8 items-center justify-center 
@@ -97,11 +98,13 @@ export const VideoDialog: FC<IVideoDialogProps> = ({ visibleResults }) => {
                   >
                     <DownloadCloud className="h-5 w-5" />
                   </span>
+
                   <span className="text-xs">Document.doc</span>
                 </Button>
                 <Button
                   colors="warning"
-                  className="h-7 w-36 border-0 p-0 pr-2 text-amber-600/90"
+                  className="h-7 w-36 justify-start border-0 p-0 pr-2 
+                  text-amber-600/90"
                 >
                   <span
                     className="flex h-full w-8 items-center justify-center 
@@ -109,6 +112,7 @@ export const VideoDialog: FC<IVideoDialogProps> = ({ visibleResults }) => {
                   >
                     <DownloadCloud className="h-5 w-5" />
                   </span>
+
                   <span className="text-xs">Presetantion.ppt</span>
                 </Button>
                 <Button
@@ -116,10 +120,13 @@ export const VideoDialog: FC<IVideoDialogProps> = ({ visibleResults }) => {
                   className="h-7 w-36 justify-start border-0 p-0 pr-2 
                     text-slate-600/90"
                 >
-                  <DownloadCloud
-                    width={40}
-                    className="h-full rounded-l bg-slate-300/60 p-1"
-                  />
+                  <span
+                    className="flex h-full w-8 items-center justify-center 
+                      rounded-l bg-slate-300/60"
+                  >
+                    <DownloadCloud className="h-5 w-5" />
+                  </span>
+
                   <span className="text-xs">Folder.zip</span>
                 </Button>
               </div>

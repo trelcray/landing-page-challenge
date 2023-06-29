@@ -1,5 +1,5 @@
 export const UseFilterData = <
-  T extends { category: string; publicationDate: string; title: string }
+  T extends { category: string; publishedAt: string; title: string }
 >(
   data: T[],
   isActive: string,
@@ -13,8 +13,8 @@ export const UseFilterData = <
             let sortResult = 0;
 
             if (selectValue === "date") {
-              const dateA = new Date(a.publicationDate);
-              const dateB = new Date(b.publicationDate);
+              const dateA = new Date(a.publishedAt);
+              const dateB = new Date(b.publishedAt);
               sortResult = dateA.getTime() - dateB.getTime();
             } else if (selectValue === "title") {
               const titleA = a.title.toUpperCase();

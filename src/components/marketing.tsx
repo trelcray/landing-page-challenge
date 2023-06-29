@@ -19,7 +19,7 @@ import {
 import { VideoDialog } from "./video-dialog";
 
 export const Marketing: FC = ({}) => {
-  const [isActive, setIsActive] = useState("Agências");
+  const [isActive, setIsActive] = useState("");
   const [selectValue, setSelectValue] = useState("date");
 
   const { isMobile, isPortrait } = UseWidth(639, 1023);
@@ -30,6 +30,11 @@ export const Marketing: FC = ({}) => {
 
   const { handleChangePage, visibleResults, pageLinks, currentPage } =
     UseCreatePagination(filteredData, numberPages);
+
+  const handleChangeCategory = (item: string) => {
+    setIsActive(item);
+    isActive === item && setIsActive("");
+  };
 
   return (
     <section
@@ -52,12 +57,12 @@ export const Marketing: FC = ({}) => {
               key={i}
               size="sm"
               variant="outline"
-              onClick={() => setIsActive(item)}
+              onClick={() => handleChangeCategory(item)}
               radius="2xl"
               className={cn(
                 "px-3 text-xs hover:border-blue-400 hover:text-blue-400",
                 {
-                  "pointer-events-none border-blue-400 bg-blue-400 text-white hover:border-blue-500 hover:bg-blue-500 hover:text-white":
+                  "border-blue-400 bg-blue-400 text-white hover:border-blue-500 hover:bg-blue-500 hover:text-white":
                     isActive === item,
                 }
               )}
@@ -92,6 +97,7 @@ export const Marketing: FC = ({}) => {
       </div>
 
       <div
+        aria-label="video"
         className="grid min-h-[56rem] grid-cols-1 place-content-start gap-4 
         border-y-2 py-10 sm:grid-cols-2 lg:grid-cols-3"
       >

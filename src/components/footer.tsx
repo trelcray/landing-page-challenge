@@ -1,13 +1,22 @@
-import { FC } from "react";
+import { FC, FunctionComponent } from "react";
 
-import { FacebookIcon, Instagram, LinkedinIcon } from "lucide-react";
+import { LucideProps } from "lucide-react";
 import Image from "next/image";
 
 import Logo from "@/assets/logo.svg";
+import { Contact, Links } from "@/mocks/info";
 
 import { Button } from "./ui/button";
 
+interface IIconsProps extends LucideProps {
+  icon: FunctionComponent;
+}
+
 export const Footer: FC = ({}) => {
+  function Icons({ icon, ...props }: IIconsProps) {
+    const Icon = icon;
+    return <Icon {...props} />;
+  }
   return (
     <footer
       className="flex h-full w-full flex-col items-center justify-center
@@ -22,83 +31,62 @@ export const Footer: FC = ({}) => {
         className="flex h-full w-full flex-wrap items-start justify-evenly 
         gap-4"
       >
-        <div
-          className="flex flex-col items-center gap-4 text-xs font-light 
-          sm:items-start sm:text-sm"
-        >
-          <h5 className="mb-2 text-base font-semibold text-gray-800">
-            Links Principais
-          </h5>
-          <span className="cursor-pointer hover:text-blue-400">Home</span>
-          <span className="cursor-pointer hover:text-blue-400">Ferramenta</span>
-          <span className="cursor-pointer hover:text-blue-400">Preços</span>
-          <span className="cursor-pointer hover:text-blue-400">Contato</span>
-        </div>
-        <div
-          className="flex flex-col items-center gap-4 text-xs font-light 
-          sm:items-start sm:text-sm"
-        >
-          <h5 className="mb-2 text-base font-semibold text-gray-800">Cases</h5>
-          <span className="cursor-pointer hover:text-blue-400">
-            Geração de Leads B2B
-          </span>
-          <span className="cursor-pointer hover:text-blue-400">
-            Geração de Leads em Software
-          </span>
-          <span className="cursor-pointer hover:text-blue-400">
-            Geração de Leads em Imobiliária
-          </span>
-          <span className="cursor-pointer hover:text-blue-400">
-            Cases de Sucesso
-          </span>
-        </div>
-        <div
-          className="flex flex-col items-center gap-4 text-xs font-light 
-          sm:items-start sm:text-sm"
-        >
-          <h5 className="mb-2 text-base font-semibold text-gray-800">
-            Materiais
-          </h5>
-          <span className="cursor-pointer hover:text-blue-400">Blog</span>
-          <span className="cursor-pointer hover:text-blue-400">
-            Parceria em Agências
-          </span>
-          <span className="cursor-pointer hover:text-blue-400">
-            Guia Definitivo do Marketing
-          </span>
-          <span className="cursor-pointer hover:text-blue-400">
-            Materias Gratuitos
-          </span>
-        </div>
+        {Links.map((data, i) => (
+          <div
+            key={i}
+            className="flex flex-col items-center gap-4 text-xs font-light 
+            sm:items-start sm:text-sm"
+          >
+            <h5 className="mb-2 text-base font-semibold text-gray-800">
+              {data.group.title}
+            </h5>
+            {data.group.links.map((link, i) => (
+              <span key={i} className="cursor-pointer hover:text-blue-400">
+                {link.name}
+              </span>
+            ))}
+          </div>
+        ))}
+
         <div
           className="flex flex-col gap-4 text-xs font-light text-gray-800 
           sm:text-sm"
         >
-          <h5 className="mb-2 text-base font-semibold">Siga a Leadster</h5>
+          <h5 className="mb-2 text-base font-semibold">{Contact.title}</h5>
           <span className="flex items-center justify-around">
-            <Button radius="full" colors="muted" className="p-2">
-              <LinkedinIcon className="h-4 w-4 fill-gray-500 text-gray-500" />
-            </Button>
-            <Button radius="full" colors="muted" className="p-2">
-              <FacebookIcon className="h-4 w-4 fill-gray-500 text-gray-500" />
-            </Button>
-            <Button radius="full" colors="muted" className="p-2">
-              <Instagram className="h-4 w-4 font-bold text-gray-500" />
-            </Button>
+            {Contact.socials.map((data, i) => (
+              <a
+                key={i}
+                href={data.href}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button radius="full" colors="muted" className="p-2">
+                  <Icons
+                    icon={data.iconName}
+                    className={`h-4 w-4 ${
+                      i === Contact.socials.length - 1
+                        ? "fill-transparent text-gray-500"
+                        : "fill-gray-500 text-gray-500"
+                    }`}
+                  />
+                </Button>
+              </a>
+            ))}
           </span>
+
           <div className="mt-4 flex flex-col gap-2">
-            <span>
-              <strong className="text-gray-800">E-mail: </strong>{" "}
-              <br className="sm:hidden" />
-              contato@leadster.com.br
-            </span>
-            <span>
-              <strong className="text-gray-800">Telefone: </strong>{" "}
-              <br className="sm:hidden" /> (42) 98828-9851
-            </span>
+            {Contact.contacts.map((data, i) => (
+              <span key={i}>
+                <strong className="text-gray-800">{data.name}: </strong>{" "}
+                <br className="sm:hidden" />
+                {data.href}
+              </span>
+            ))}
           </div>
         </div>
       </div>
+
       <span className="mt-6 w-full border" />
       <div className="flex w-full justify-around gap-2 text-xs">
         <p>
