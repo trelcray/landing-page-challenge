@@ -7,21 +7,23 @@ describe("VideoDialog Component", () => {
     const visibleResults = [
       {
         id: 1,
-        link: "https://www.youtube.com/watch?v=lx0eir2xF5E",
-        urlImage: "/thumbnail.png",
-        title: "Video 1",
-        description: "Description 1",
-        category: "Category 1",
-        publicationDate: "2023-06-28",
+        videoUrl: "https://www.youtube.com/watch?v=8EKTUhF7yA8",
+        imageUrl: "/thumbnail.png",
+        title: "Tendências de Marketing para 2024!",
+        description:
+          "Veja como a Leadster define suas metas e conheça novas estratégias para testar em 2024.",
+        category: "Marketing Digital",
+        publishedAt: "2022-11-12",
       },
       {
         id: 2,
-        link: "https://www.youtube.com/watch?v=lx0eir2xF5E",
-        urlImage: "/thumbnail.png",
-        title: "Video 2",
-        description: "Description 2",
-        category: "Category 2",
-        publicationDate: "2023-06-29",
+        videoUrl: "https://www.youtube.com/watch?v=a89Htfx0YKo",
+        imageUrl: "/leads.png",
+        title: "Como usar o ChatGPT para gerar mais Leads Qualificados",
+        description:
+          "Conheça a nova funcionalidade da Leadster + ChatGPT e descubra como essa tecnologia irá transformar o Marketing.",
+        category: "Geração de Leads",
+        publishedAt: "2022-06-01",
       },
     ];
 
@@ -29,7 +31,9 @@ describe("VideoDialog Component", () => {
       <VideoDialog visibleResults={visibleResults} />
     );
 
-    expect(getByText("Video 1")).toBeInTheDocument();
-    expect(getByText("Video 2")).toBeInTheDocument();
+    expect(getByText("Tendências de Marketing para 2024!")).toBeInTheDocument();
+    expect(
+      getByText("Como usar o ChatGPT para gerar mais Leads Qualificados")
+    ).toBeInTheDocument();
   });
 });

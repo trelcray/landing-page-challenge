@@ -5,17 +5,17 @@ describe("use filter data hook", () => {
     const data = [
       {
         category: "Agências",
-        publicationDate: "2021-12-31",
+        publishedAt: "2021-12-31",
         title: "Título B",
       },
       {
         category: "Agências",
-        publicationDate: "2022-01-01",
+        publishedAt: "2022-01-01",
         title: "Título A",
       },
       {
         category: "Agências",
-        publicationDate: "2022-02-01",
+        publishedAt: "2022-02-01",
         title: "Título C",
       },
     ];
@@ -32,17 +32,17 @@ describe("use filter data hook", () => {
     const data = [
       {
         category: "Marketing Digital",
-        publicationDate: "2022-01-01",
+        publishedAt: "2022-01-01",
         title: "Título C",
       },
       {
         category: "Marketing Digital",
-        publicationDate: "2021-12-31",
+        publishedAt: "2021-12-31",
         title: "Título A",
       },
       {
         category: "Marketing Digital",
-        publicationDate: "2022-02-01",
+        publishedAt: "2022-02-01",
         title: "Título B",
       },
     ];
@@ -55,17 +55,17 @@ describe("use filter data hook", () => {
     expect(filteredData).toEqual([
       {
         category: "Marketing Digital",
-        publicationDate: "2021-12-31",
+        publishedAt: "2021-12-31",
         title: "Título A",
       },
       {
         category: "Marketing Digital",
-        publicationDate: "2022-02-01",
+        publishedAt: "2022-02-01",
         title: "Título B",
       },
       {
         category: "Marketing Digital",
-        publicationDate: "2022-01-01",
+        publishedAt: "2022-01-01",
         title: "Título C",
       },
     ]);
@@ -75,17 +75,17 @@ describe("use filter data hook", () => {
     const data = [
       {
         category: "Marketing Digital",
-        publicationDate: "2022-01-01",
+        publishedAt: "2022-01-01",
         title: "Título 2",
       },
       {
         category: "Marketing Digital",
-        publicationDate: "2021-12-31",
+        publishedAt: "2021-12-31",
         title: "Título 3",
       },
       {
         category: "Marketing Digital",
-        publicationDate: "2022-02-01",
+        publishedAt: "2022-02-01",
         title: "Título 1",
       },
     ];
@@ -98,17 +98,17 @@ describe("use filter data hook", () => {
     expect(filteredData).toEqual([
       {
         category: "Marketing Digital",
-        publicationDate: "2022-02-01",
+        publishedAt: "2022-02-01",
         title: "Título 1",
       },
       {
         category: "Marketing Digital",
-        publicationDate: "2022-01-01",
+        publishedAt: "2022-01-01",
         title: "Título 2",
       },
       {
         category: "Marketing Digital",
-        publicationDate: "2021-12-31",
+        publishedAt: "2021-12-31",
         title: "Título 3",
       },
     ]);
@@ -117,7 +117,7 @@ describe("use filter data hook", () => {
   it("Should return an empty array when there is no data", () => {
     const data: {
       category: string;
-      publicationDate: string;
+      publishedAt: string;
       title: string;
     }[] = [];
     const isActive = "Agências";

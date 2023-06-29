@@ -28,7 +28,7 @@ describe("the use create pagination hook", () => {
     expect(result.current.visibleResults).toEqual([4, 5, 6]);
   });
 
-  it.only("Should display sequential page links closest to the current page", () => {
+  it("Should display sequential page links closest to the current page", () => {
     const data = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
     const rowsPerPage = 1;
@@ -58,5 +58,23 @@ describe("the use create pagination hook", () => {
     });
 
     expect(result.current.currentPage).toBe(10);
+  });
+
+  it("Should calculate the total number of pages correctly", () => {
+    const data = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    const rowsPerPage = 3;
+
+    const { result } = renderHook(() => UseCreatePagination(data, rowsPerPage));
+
+    expect(result.current.totalPages).toBe(4);
+  });
+
+  it("Should return 1 page when rowsPerPage is -1", () => {
+    const data = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    const rowsPerPage = -1;
+
+    const { result } = renderHook(() => UseCreatePagination(data, rowsPerPage));
+
+    expect(result.current.totalPages).toBe(1);
   });
 });
