@@ -5,7 +5,7 @@ import { FC, useState } from "react";
 import { UseCreatePagination } from "@/hooks/use-create-pagination";
 import { UseFilterData } from "@/hooks/use-filter-data";
 import { UseWidth } from "@/hooks/use-width";
-import { videos } from "@/mocks/videos.json";
+import videos from "@/mocks/videos.json";
 import { cn } from "@/utils/cn";
 
 import { Button } from "./ui/button";
@@ -79,6 +79,7 @@ export const Marketing: FC = ({}) => {
             onValueChange={(value) => setSelectValue(value)}
           >
             <SelectTrigger
+              aria-label="select order"
               className="w-[180px] rounded-lg border-gray-800 
               px-2 text-xs"
             >

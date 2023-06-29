@@ -1,8 +1,7 @@
-import { FC, Suspense } from "react";
+import { FC } from "react";
 
 import { DownloadCloud } from "lucide-react";
 
-import { Video } from "./skeleton/video";
 import { Button } from "./ui/button";
 import { CardVideo } from "./ui/card-video";
 import {
@@ -48,9 +47,7 @@ export const VideoDialog: FC<IVideoDialogProps> = ({ visibleResults }) => {
                 className="flex h-[12.4rem] w-full sm:h-[13.5rem] 
                   lg:h-[15.78rem]"
               >
-                <Suspense fallback={<Video />}>
-                  <YoutubePlayer videoId={item.videoUrl} />
-                </Suspense>
+                <YoutubePlayer videoId={item.videoUrl} />
               </div>
               <DialogDescription
                 className="line-clamp-4 flex w-full flex-col px-2 

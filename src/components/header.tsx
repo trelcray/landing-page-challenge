@@ -7,7 +7,13 @@ import Logo from "@/assets/logo.svg";
 export const Header: FC = ({}) => {
   return (
     <header className="flex flex-1 items-center justify-center py-10">
-      <Image height={190} width={190} src={Logo} alt="logo" />
+      <Image
+        height={190}
+        width={190}
+        src={Logo}
+        className="h-auto w-auto"
+        alt="logo"
+      />
     </header>
   );
 };

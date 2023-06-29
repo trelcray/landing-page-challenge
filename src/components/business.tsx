@@ -18,9 +18,9 @@ export const Business: FC = ({}) => {
     >
       <div className="flex">
         <Image
-          width={320}
-          height={320}
-          className="z-10 h-80 w-80 md:h-[26rem] md:w-[26rem]"
+          width={563}
+          height={400}
+          className="z-10 h-[26rem] w-[26rem] md:h-[25rem] md:w-[35.1875rem]"
           src={Comparative}
           alt="leadster graphic"
           priority
@@ -28,16 +28,15 @@ export const Business: FC = ({}) => {
         <Image
           width={320}
           height={320}
-          className="absolute inset-x-0 -left-8 top-8 mx-auto h-80 md:h-[26rem] 
-          md:w-[26rem] lg:inset-x-auto lg:bottom-0 lg:left-0 lg:top-auto
-          lg:h-[25rem] lg:w-5/12"
+          className="absolute inset-0 -left-8 mx-auto h-full w-full pt-10
+          lg:inset-x-auto lg:bottom-0 lg:left-0 lg:w-5/12"
           src={BG}
           alt="background"
           priority
         />
       </div>
 
-      <div className="flex flex-col gap-2">
+      <div className="z-20 flex flex-col gap-2">
         <h2 className="text-3xl">
           Pronto para triplicar sua <br />
           <strong>Geração de Leads?</strong>
@@ -53,15 +52,34 @@ export const Business: FC = ({}) => {
           <Button colors="secondary" radius="full" className="p-4">
             <span>VER DEMONSTRAÇÃO</span>
           </Button>
-          <Image width={200} height={200} src={RD} alt="Stamp RD" />
+          <Image
+            width={200}
+            height={200}
+            src={RD}
+            className="h-auto w-auto"
+            alt="Stamp RD"
+          />
         </div>
         <div className="flex flex-wrap items-end gap-2 text-xs">
-          <Image width={18} height={18} src={Card} alt="card icon" />
+          <Image
+            width={18}
+            height={18}
+            src={Card}
+            className="h-auto w-auto"
+            alt="card icon"
+          />
           <p>
             <strong>Não</strong>
             {""} é necessário Cartão de Crédito |{" "}
           </p>
-          <Image width={100} height={100} src={Rating} alt="star rating" /> {""}
+          <Image
+            width={100}
+            height={100}
+            src={Rating}
+            className="h-auto w-auto"
+            alt="star rating"
+          />{" "}
+          {""}
           <span>4.9/5 de média de satisfação</span>
         </div>
       </div>

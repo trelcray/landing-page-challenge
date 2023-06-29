@@ -20,10 +20,17 @@ export const Footer: FC = ({}) => {
   return (
     <footer
       className="flex h-full w-full flex-col items-center justify-center
-      gap-8 px-2 pb-4 pt-8 text-center text-gray-500 sm:text-start"
+      gap-8 px-2 pb-4 pt-8 text-center text-gray-800 sm:text-start"
     >
       <div className="flex flex-col items-center justify-center">
-        <Image height={210} width={210} src={Logo} alt="logo" priority />
+        <Image
+          height={210}
+          width={210}
+          src={Logo}
+          className="h-auto w-auto"
+          alt="logo"
+          priority
+        />
         <p className="text-xs">Transformando visitantes em clientes.</p>
       </div>
 
@@ -37,11 +44,11 @@ export const Footer: FC = ({}) => {
             className="flex flex-col items-center gap-4 text-xs font-light 
             sm:items-start sm:text-sm"
           >
-            <h5 className="mb-2 text-base font-semibold text-gray-800">
+            <h1 className="mb-2 text-base font-semibold text-gray-800">
               {data.group.title}
-            </h5>
+            </h1>
             {data.group.links.map((link, i) => (
-              <span key={i} className="cursor-pointer hover:text-blue-400">
+              <span key={i} className="cursor-pointer hover:text-blue-500">
                 {link.name}
               </span>
             ))}
@@ -56,12 +63,18 @@ export const Footer: FC = ({}) => {
           <span className="flex items-center justify-around">
             {Contact.socials.map((data, i) => (
               <a
+                aria-label="link to contact"
                 key={i}
                 href={data.href}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Button radius="full" colors="muted" className="p-2">
+                <Button
+                  aria-label="button contact"
+                  radius="full"
+                  colors="muted"
+                  className="p-2"
+                >
                   <Icons
                     icon={data.iconName}
                     className={`h-4 w-4 ${
